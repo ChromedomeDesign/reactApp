@@ -84,7 +84,7 @@ First you will need to download and install Node, if you don't already have it o
     ```sh
     cd path/to/reactApp
     ```
-2. Make sure you have the correct Node Version active. The target version of Node is declared in the ``.npmrc`` file in the project folder.
+2. Make sure you have the correct Node Version active. The target version of Node is declared in the ``.npmrc`` file in the project folder. The ``use`` command is not available on Windows.
    ```sh
    nvm use
    ```
