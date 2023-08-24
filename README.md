@@ -78,7 +78,7 @@ First you will need to download and install Node, if you don't already have it o
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/lawremp/reactApp.git
    ```
 2. Make sure you are in the root of our project in your chosen terminal
     ```sh
@@ -124,7 +124,7 @@ This project comes with several pre-configured utilities to get you started.
 
 - [ ] Feature Placeholder
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/lawremp/reactApp/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
