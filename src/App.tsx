@@ -1,38 +1,45 @@
-import React from 'react'
-// @ts-expect-error moduleResolution:nodenext issue 54523
-import { MDBContainer, MDBBtn } from 'mdb-react-ui-kit'
+import React from 'react';
+// @ts-expect-error
+import { MDBContainer, MDBBtn } from 'mdb-react-ui-kit';
 
 type AppProps = {
-   message: string
-}
+    message: string;
+};
 
-const App = ({message}: AppProps): JSX.Element => {
-   return (
-      <MDBContainer fluid>
-      <div
-        className='d-flex justify-content-center align-items-center'
-        style={{ height: '100vh' }}
-      >
-        <div className='text-center'>
-          <img
-            className='mb-4'
-            src='https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'
-            style={{ width: 250, height: 90 }}
-          />
-          <h5 className='mb-3'>{message}</h5>
-          <p className='mb-3'>MDB Team</p>
-          <MDBBtn
-            tag='a'
-            href='https://mdbootstrap.com/docs/standard/getting-started/'
-            target='_blank'
-            role='button'
-          >
-            Click this Button
-          </MDBBtn>
-        </div>
-      </div>
-    </MDBContainer>
-   )
-}
+const App = ({ message }: AppProps): JSX.Element => {
+    return (
+        <MDBContainer fluid>
+            <header className="masthead d-flex">
+                <div className="container text-center my-auto">
+                    <h1 className="mb-5">chromedome design</h1>
+                    <div className="row mb-5">
+                        <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                            <img src="https://chromedomedesign.com/img/Asset-1.png" />
+                        </div>
+                        <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                            <img src="https://chromedomedesign.com/img/Asset-2.png" />
+                        </div>
+                        <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
+                            <img src="https://chromedomedesign.com/img/Asset-3.png" />
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <img src="https://chromedomedesign.com/img/Asset-4.png" />
+                        </div>
+                    </div>
+                    <h3 className="mb-5">
+                        <em>
+                            We plan, design, and execute custom applications and web solutions. Contact us for help with
+                            your project.
+                        </em>
+                    </h3>
+                    <MDBBtn tag="a" href="https://chromedomedesign.com/" target="_blank" role="button">
+                        Get In Touch
+                    </MDBBtn>
+                </div>
+                <div className="overlay"></div>
+            </header>
+        </MDBContainer>
+    );
+};
 
-export default App
+export default App;

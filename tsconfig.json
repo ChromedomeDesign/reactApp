@@ -2,8 +2,9 @@
     "extends": "@tsconfig/node18/tsconfig.json",
     "compilerOptions": {
       "jsx": "react",
-      "preserveConstEnums": true
+      "preserveConstEnums": true,
+      "typeRoots": ["./node_modules/@types", "./src/types"]
     },
     "include": ["src/**/*"],
-    "exclude": ["**/*.spec.ts"]
+    "exclude": ["**/*.spec.ts", "**/*.css"],
 }
