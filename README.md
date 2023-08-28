@@ -31,6 +31,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#code-testing">Code Testing</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ol>
 </details>
@@ -50,10 +51,28 @@ This is our sample starter project for React.
 ### Built With
 
 [![React][React.js]][React-url]
+
+React is a free and open-source front-end JavaScript library for building user interfaces based on components.
+
+[![Material Design][MDB]][MDB-url]
+
+Material Design UI kits provide a uniform UI component set that can be themed easily.
+
 [![Webpack][Webpack.js]][Webpack-url]
+
+Webpack is a module bundler for JavaScript. It takes modules with dependencies and generates static assets representing those modules. The important configurations are contained in the <a href="#webpack-config">Webpack Config</a>
+
 [![Babel][Babeljs.io]][Babel-url]
+
+Babel is used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. It also provides polyfills for features that are not supported in certain browsers.
+
 [![Typescript][Typescript.org]][Typescript-url]
+
+TypeScript is a strongly typed programming language that builds on JavaScript. It provides tools to make your code easier to read and more predictable, as well as making it easier to catch errors sooner within your chosen code editor. The important configurations are contained in the <a href="#typescript-config">Typescript Config</a>
+
 [![DotENV][DotENV.org]][DotENV-url]
+
+DotENV provides a system for storing and syncing developer "secrets", or sensitive information. This is a good place to store things like API tokens, third party keys and other information that needs to be synchronized between developers and environments, but hidden from user.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,15 +127,25 @@ This project comes with several pre-configured utilities to get you started.
 
 - VS Code Profile
     - Included in this project is a ``.code-profile`` file. If you are using Visual Studio Code as your IDE you can load this profile. It includes several useful extensions and configurations.
-- TS Config
+- TS Config <a name="typescript-config"></a>
     - This file declares a basic configuration for Typescript compiling and Intellisense. It extends the Node 18 basic TS config.
-- Webpack Config
+- Webpack Config <a name="webpack-config"></a>
     - This file declares the settings for webpack to compress and deliver the site assets when the project is built or run locally. It also includes a utility that will allow @aliases defined in the TS Config file to flow through.
 - Package JSON
     - This file has several configurations for NPM to run properly. The dependant packages and their versions are declared here, as well as the commands that the project will need to run properly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- TESTING -->
+## Code Testing
+The current setup does not yet include any testing support. It would be recommended for larger, long-lived projects that some automated testing be implemented. The two main options for this would be Unit Tests and End-to-end Tests. 
+
+Unit tests are intentionally written to be self-contained and avoid having any dependencies within the code, thus "unit". Each test is written to work independently and asynchronosly with all other tests and should work on only a single unit of functionality. All needed data for the test should be "mocked". Our suggested unit testing framework is Jest
+
+End-to-end (e2e) tests are designed to take a user-like path through certain parts of the project. An example of an e2e test would be to choose a product and go all the way through the purchase process. E2e tests usually are written to work against a test or development environment so they don't obstruct the actual users. Our suggested platform for e2e tests is Cypress.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->
@@ -135,6 +164,8 @@ See the [open issues](https://github.com/lawremp/reactApp/issues) for a full lis
 [Webpack-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[MDB]: https://img.shields.io/badge/Material%20Design-007acc?style=for-the-badge&logo=material-design&logoColor=white
+[MDB-url]: https://mdbootstrap.com/
 [Babeljs.io]: https://img.shields.io/badge/babel.js-3b3c38?style=for-the-badge&logo=babel&logoColor=f5da55
 [Babel-url]: https://babeljs.io/
 [Typescript.org]: https://img.shields.io/badge/Typescript-3178c6?style=for-the-badge&logo=typescript&logoColor=white
