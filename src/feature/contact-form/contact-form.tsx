@@ -1,5 +1,4 @@
 import React from 'react'
-// @ts-expect-error
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBTextArea, MDBBtn } from 'mdb-react-ui-kit'
 
 export const ContactForm = (props:any) => {

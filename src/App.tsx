@@ -1,6 +1,5 @@
 // This is your main application file.
 import React from 'react' // Importing the core React library
-// @ts-expect-error
 import { MDBContainer, MDBBtn, MDBTextArea, MDBInput, MDBRow, MDBCol } from 'mdb-react-ui-kit' // Importing specific components from our UI library
 import { ContactForm } from './feature/contact-form/contact-form' // Importing our custom component
 
