@@ -4,7 +4,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import './styles/stylish-portfolio.css';
 import App from './App.tsx';
 
-const container = document.getElementById('app')
-const root = createRoot(container)
+const container = document.getElementById('app') // Define the target element from our index.html
+const root = createRoot(container) // Use the 'createRoot' functionality to give React the ability to inject JS
 
-root.render(<App message='Hello World' />)
+root.render(<App message='Hello World' />) // Render the application, passing in any required props for initialization

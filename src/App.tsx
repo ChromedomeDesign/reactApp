@@ -1,12 +1,19 @@
-import React from 'react';
+// This is your main application file.
+import React from 'react' // Importing the core React library
 // @ts-expect-error
-import { MDBContainer, MDBBtn, MDBTextArea, MDBInput } from 'mdb-react-ui-kit';
+import { MDBContainer, MDBBtn, MDBTextArea, MDBInput, MDBRow, MDBCol } from 'mdb-react-ui-kit' // Importing specific components from our UI library
+import { ContactForm } from './feature/contact-form/contact-form' // Importing our custom component
 
+// This is a simple variable type definition. With Typescript, we should define our variables as strictly as we can so that the tooling can
+// detect type mismatches in real time. This will also provide us with verbose feedback at runtime if dynamic data is mismatched with the
+// expected data types
 type AppProps = {
     message: string;
 };
 
+// This is the function component that represnts the application scope
 const App = ({ message }: AppProps): JSX.Element => {
+    // The return statement below represents the TSX element that will render as HTML to the page.
     return (
         <MDBContainer fluid>
             <header className="masthead d-flex">
@@ -38,91 +45,10 @@ const App = ({ message }: AppProps): JSX.Element => {
                 </div>
                 <div className="overlay"></div>
             </header>
-            <MDBContainer fluid className="content-section" id="about">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 mx-auto">
-                            <h2 className="text-center">Contact Us</h2>
-                            <form id="contact-form" method="post" action="contact.php" role="form">
-                                <div className="controls">
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <label htmlFor="form_name">Name *</label>
-                                                <MDBInput
-                                                    label="Please enter your name *"
-                                                    className="form-control"
-                                                    id="form_name"
-                                                    type="text"
-                                                />
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <label htmlFor="form_lastname">Company</label>
-                                                <MDBInput
-                                                    label="Please enter your company name"
-                                                    className="form-control"
-                                                    id="form_company"
-                                                    type="text"
-                                                />
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <label htmlFor="form_email">Email *</label>
-                                                <MDBInput
-                                                    label="Please enter your email *"
-                                                    className="form-control"
-                                                    id="form_email"
-                                                    type="email"
-                                                />
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <label htmlFor="form_phone">Phone</label>
-                                                <MDBInput
-                                                    label="Please enter your phone"
-                                                    className="form-control"
-                                                    id="form_phone"
-                                                    type="tel"
-                                                />
-                                                <div className="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="form_message">Message *</label>
-                                        <MDBTextArea
-                                            label="Message"
-                                            id="textAreaExample"
-                                            rows={4}
-                                            className="form-control"
-                                        />
-                                        <div className="help-block with-errors"></div>
-                                    </div>
-
-                                    <MDBBtn tag="a" href="https://chromedomedesign.com/" target="_blank" role="button">
-                                        Send message
-                                    </MDBBtn>
-
-                                    <p className="text-muted">
-                                        <strong>*</strong> These fields are required.
-                                    </p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </MDBContainer>
+            <ContactForm />
         </MDBContainer>
     );
 };
 
+// This export statement is required for the component to be imported elsewhere
 export default App;
