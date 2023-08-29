@@ -48,7 +48,7 @@ This project is setup so we can quickly implement new react projects as needed. 
 
 ### Code Best Practices
 - File Organization
-    - Directory structure should be organized by "features" and "pages". (do we need to add a directory for universal site elements like background images, core/container css, etc.?)
+    - Directory structure should be organized by "features" and "pages" whenever possible, while maintaining the traditional "component", "model", "types", "styles", etc folders only as-needed for global elements. In our example, we define the types for our UI kit in a top-level "types" folder because they are used across multiple features and pages.
     - Features: Everything necessary for any given feature should be within it's own directory under features. This ensures future feature requests and revisions are easily managed and easy for anyone on the team to locate.
     - Pages: User facing pages should be kept within the "pages" directory. A relatively flat site/application can have the pages all in the root of that directory, however for a large implementation with many subpages, please add additional directories to keep things organized. 
     - An in depth explanation of why this method of organization is preferrable can be found <a href="https://profy.dev/article/react-folder-structure">here</a>.
