@@ -20,6 +20,9 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#code-standards">Code Standards</a></li>
+      </ul>
+      <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -56,7 +59,8 @@ React is a free and open-source front-end JavaScript library for building user i
 
 [![Material Design][MDB]][MDB-url]
 
-Material Design UI kits provide a uniform UI component set that can be themed easily.
+Material Design UI kits provide a uniform UI component set that can be themed easily. We are using MDBootstrap in this implementation. Why MDBootstrap? Because Dustin said so.
+NOTE: Depending on the use case, the client may need to purchase a license.
 
 [![Webpack][Webpack.js]][Webpack-url]
 
@@ -127,10 +131,10 @@ This project comes with several pre-configured utilities to get you started.
 
 - VS Code Profile
     - Included in this project is a ``.code-profile`` file. If you are using Visual Studio Code as your IDE you can load this profile. It includes several useful extensions and configurations.
-- TS Config <a name="typescript-config"></a>
-    - This file declares a basic configuration for Typescript compiling and Intellisense. It extends the Node 18 basic TS config.
+- TypeScript Config <a name="typescript-config"></a>
+    - This file declares a basic configuration for Typescript compiling and Intellisense. It extends the Node 18 basic TypeScript config.
 - Webpack Config <a name="webpack-config"></a>
-    - This file declares the settings for webpack to compress and deliver the site assets when the project is built or run locally. It also includes a utility that will allow @aliases defined in the TS Config file to flow through.
+    - This file declares the settings for webpack to compress and deliver the site assets when the project is built or run locally. It also includes a utility that will allow @aliases defined in the TypeScript Config file to flow through.
 - Package JSON
     - This file has several configurations for NPM to run properly. The dependant packages and their versions are declared here, as well as the commands that the project will need to run properly.
 
@@ -141,9 +145,9 @@ This project comes with several pre-configured utilities to get you started.
 ## Code Testing
 The current setup does not yet include any testing support. It would be recommended for larger, long-lived projects that some automated testing be implemented. The two main options for this would be Unit Tests and End-to-end Tests. 
 
-Unit tests are intentionally written to be self-contained and avoid having any dependencies within the code, thus "unit". Each test is written to work independently and asynchronosly with all other tests and should work on only a single unit of functionality. All needed data for the test should be "mocked". Our suggested unit testing framework is Jest
+Unit tests are intentionally written to be self-contained and avoid having any dependencies within the code, thus "unit". Each test is written to work independently and asynchronosly with all other tests and should work on only a single unit of functionality. All needed data for the test should be "mocked". Our suggested unit testing framework is (TBD).
 
-End-to-end (e2e) tests are designed to take a user-like path through certain parts of the project. An example of an e2e test would be to choose a product and go all the way through the purchase process. E2e tests usually are written to work against a test or development environment so they don't obstruct the actual users. Our suggested platform for e2e tests is Cypress.
+End-to-end (e2e) tests are designed to take a user-like path through certain parts of the project. An example of an e2e test would be to choose a product and go all the way through the purchase process. E2e tests usually are written to work against a test or development environment so they don't obstruct the actual users. Our suggested platform for e2e tests is (TBD).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
