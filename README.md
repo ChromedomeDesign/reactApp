@@ -20,7 +20,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#code-standards">Code Standards</a></li>
+        <li><a href="#code-best-practices">Code Best Practices</a></li>
       </ul>
       <ul>
         <li><a href="#built-with">Built With</a></li>
@@ -46,13 +46,34 @@
 
 This project is setup so we can quickly implement new react projects as needed. It includes several packages that should be usefule in every project. However, for obvious reasons, it won't cover every possible use case. You will almost certainly add more to any given project. Discuss any additions with Dustin Murphy before implementing. You will typically clone this repo into a new project and update this readme file with additonal relevant project information.
 
-### Code Standards
+### Code Best Practices
 - File Organization
-      - Directory structure should be organized by "features" and "pages".
-      - Features: Everything necessary for any given feature should be within it's own directory under features. This ensures future feature requests and revisions are easily managed and easy for anyone on the team to locate.
-      - Pages: User facing pages should be kept within the "pages" directory. A relatively flat site/application can have the pages all in the root of that directory, however for a large implementation with many subpages, please add additional directories to keep things organized. 
-      -  An in depth explanation of why this method of organization is preferrable can be found <a href="https://profy.dev/article/react-folder-structure">here</a>.
-- Use absolute imports when referencing anything in the project. Doing so will mean we an move pages, components, features, etc around without breaking the entire site/app. It will also make any future refactor efforts quite a bit simpler. Information on how to setup absolute imports can be found <a href="https://javascript.plainenglish.io/why-and-how-to-use-absolute-imports-in-react-d5b52f24d53c">here</a>. 
+    - Directory structure should be organized by "features" and "pages". (do we need to add a directory for universal site elements like background images, core/container css, etc.?)
+    - Features: Everything necessary for any given feature should be within it's own directory under features. This ensures future feature requests and revisions are easily managed and easy for anyone on the team to locate.
+    - Pages: User facing pages should be kept within the "pages" directory. A relatively flat site/application can have the pages all in the root of that directory, however for a large implementation with many subpages, please add additional directories to keep things organized. 
+    - An in depth explanation of why this method of organization is preferrable can be found <a href="https://profy.dev/article/react-folder-structure">here</a>.
+- Paths and Imports
+    - Use absolute imports when referencing anything in the project. Doing so will mean we can move pages, components, features, etc around without breaking the entire site/app. It will also make any future refactor efforts quite a bit simpler. Information on how to setup absolute imports can be found <a href="https://javascript.plainenglish.io/why-and-how-to-use-absolute-imports-in-react-d5b52f24d53c">here</a>.
+    - Where applicable, use site root relative url paths for linking within the app/site. (need to confirm this still)
+- Naming Conventions
+    - In general, use kebab case for everything. If working with a legacy project that uses camelCase or PascalCase, you don't need to rename every function, class, method, etc. However, certain elements should be updated - images, browser files (ex. AboutUs should be about-us), and as well as anything that faces the user.
+    - Images: constructor images should be named based on the purpose and usage location. For example, a background image for the entire site would be 
+bkgd-site.png while a background image for the about section would be bkgd-about.png. Non-constructor images (like product photos) should be named descriptively and, where appropriate, include taxonomy so they can be easily changed in the future. An example for a widget product used on a bicycle would be bicycle-widget.png. If there are many images, create directories as necessary. 
+- SEO
+    - The primary reason for using kebab case is for Search Engine Optimization. Even on projects (like intranets or extranets) that are not indexed, it's a good idea to implement kebab case naming for the sake of consistency.
+    - All publicly visible sites need to include meta data in the head of each document. Below is a list of the ones that need to be on every site, however this isn't a comprehensive list. After the site has been built out, there will need to be a comprehensive SEO review.
+        -  title (use both the sitename and the section name in the title tag) 
+        -  description
+        -  robots
+        -  viewport
+    - Semantic Markup: Use the right tag for the right job. Be sure to organize hierarchical content with H1, H2, H3, etc. Just because you can restyle any tag doesn't mean you should. <a href"https://www.w3schools.com/TAGS/default.asp>Here is a list</a> of html tag; unless required by the client, don't use any that are not HTML 5 compatible.
+    - Do not use image text unless required by the client.
+    - All images and links should include alt text and title text. (need to check if title text on images is still an SEO best practice).
+    - Pages should be kebab case and descriptive.
+- CSS
+    -  If you don't use specificity, you're fired.
+    -  If your first resort is inline css, you're fired.
+    -  Be sure any attributes are cross browser compatible, or at least plan for graceful degradation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
