@@ -44,12 +44,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This project is setup so we can quickly implement new react projects as needed. It includes several packages that should be usefule in every project. However, for obvious reasons, it won't cover every possible use case. You will almost certainly add more to any given project. Discuss any additions with Dustin Murphy before implementing. You will typically clone this repo into a new project and update this readme file with additonal relevant project information.
 
-This is our sample starter project for React.
+### Code Standards
+- File Organization
+      - Directory structure should be organized by "features" and "pages".
+      - Features: Everything necessary for any given feature should be within it's own directory under features. This ensures future feature requests and revisions are easily managed and easy for anyone on the team to locate.
+      - Pages: User facing pages should be kept within the "pages" directory. A relatively flat site/application can have the pages all in the root of that directory, however for a large implementation with many subpages, please add additional directories to keep things organized. 
+      -  An in depth explanation of why this method of organization is preferrable can be found <a href="https://profy.dev/article/react-folder-structure">here</a>.
+- Use absolute imports when referencing anything in the project. Doing so will mean we an move pages, components, features, etc around without breaking the entire site/app. It will also make any future refactor efforts quite a bit simpler. Information on how to setup absolute imports can be found <a href="https://javascript.plainenglish.io/why-and-how-to-use-absolute-imports-in-react-d5b52f24d53c">here</a>. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
