@@ -66,7 +66,7 @@ bkgd-site.png while a background image for the about section would be bkgd-about
         -  description
         -  robots
         -  viewport
-    - Semantic Markup: Use the right tag for the right job. Be sure to organize hierarchical content with H1, H2, H3, etc. Just because you can restyle any tag doesn't mean you should. <a href"https://www.w3schools.com/TAGS/default.asp">Here is a list</a> of html tag; unless required by the client, don't use any that are not HTML 5 compatible.
+    - Semantic Markup: Use the right tag for the right job. Be sure to organize hierarchical content with H1, H2, H3, etc. Just because you can restyle any tag doesn't mean you should. <a href= "https://www.w3schools.com/TAGS/default.asp">Here is a list</a> of html tag; unless required by the client, don't use any that are not HTML 5 compatible.
     - Do not use image text unless required by the client.
     - All images and links should include alt text and title text. (need to check if title text on images is still an SEO best practice).
     - Pages should be kebab case and descriptive.
