@@ -4,7 +4,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">ReactApp Starter Project</h3>
+<h3 align="center">Chromedome Design React Template</h3>
 
   <p align="center">
     React Starter Project
