@@ -66,7 +66,7 @@ bkgd-site.png while a background image for the about section would be bkgd-about
         -  description
         -  robots
         -  viewport
-    - Semantic Markup: Use the right tag for the right job. Be sure to organize hierarchical content with H1, H2, H3, etc. Just because you can restyle any tag doesn't mean you should. <a href"https://www.w3schools.com/TAGS/default.asp>Here is a list</a> of html tag; unless required by the client, don't use any that are not HTML 5 compatible.
+    - Semantic Markup: Use the right tag for the right job. Be sure to organize hierarchical content with H1, H2, H3, etc. Just because you can restyle any tag doesn't mean you should. <a href"https://www.w3schools.com/TAGS/default.asp">Here is a list</a> of html tag; unless required by the client, don't use any that are not HTML 5 compatible.
     - Do not use image text unless required by the client.
     - All images and links should include alt text and title text. (need to check if title text on images is still an SEO best practice).
     - Pages should be kebab case and descriptive.
@@ -127,11 +127,11 @@ First you will need to download and install Node, if you don't already have it o
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lawremp/reactApp.git
+   git clone https://github.com/ChromedomeDesign/react-template.git
    ```
 2. Make sure you are in the root of our project in your chosen terminal
     ```sh
-    cd path/to/reactApp
+    cd path/to/react-template
     ```
 2. Make sure you have the correct Node Version active. The target version of Node is declared in the ``.npmrc`` file in the project folder. The ``use`` command is not available on Windows.
    ```sh
@@ -183,7 +183,8 @@ End-to-end (e2e) tests are designed to take a user-like path through certain par
 
 - [ ] Feature Placeholder
 
-See the [open issues](https://github.com/lawremp/reactApp/issues) for a full list of proposed features (and known issues).
+Update this section as necessary for each project.
+See the [open issues](https://github.com/ChromedomeDesign/react-template) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
