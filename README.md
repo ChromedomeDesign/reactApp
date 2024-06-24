@@ -127,7 +127,7 @@ First you will need to download and install Node, if you don't already have it o
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ChromedomeDesign/react-template.git
+   git clone https://github.com/ChromedomeDesign/paint-mix-react.git
    ```
 2. Make sure you are in the root of our project in your chosen terminal
     ```sh
