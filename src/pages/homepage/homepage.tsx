@@ -2,7 +2,6 @@ import React from "react"
 // components
 import { MDBContainer, MDBBtn } from "mdb-react-ui-kit"
 import { ContactForm } from "@feature/contact-form/contact-form"
-import { ApiTest } from "@pages/apitest/apitest"
 // static assets
 import head1 from "./img/head-1.png"
 import head2 from "./img/head-2.png"
@@ -41,7 +40,6 @@ export const Homepage = (props: any): JSX.Element => {
                 </div>
                 <div className="overlay"></div>
             </header>
-            <ApiTest />
             <ContactForm />
         </MDBContainer>
     )

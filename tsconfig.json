@@ -8,8 +8,7 @@
         "paths": {
             "@feature/*": ["feature/*"],
             "@pages/*": ["pages/*"],
-            "@common/*": ["common/*"],
-            "@apis/*": ["apis/*"]
+            "@common/*": ["common/*"]
         }
     },
     "include": ["src/**/*"],
